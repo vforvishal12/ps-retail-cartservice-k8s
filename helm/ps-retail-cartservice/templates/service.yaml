@@ -1,0 +1,16 @@
+# Service - LoadBalancer
+# # pb-service -lb.yml
+apiVersion: v1
+kind: Service
+metadata:
+  name: ps-retail-cartservice-service
+  labels:
+    app: ps-retail-cartservice-app
+spec:
+  selector:
+    app: ps-retail-cartservice-app
+  type: LoadBalancer
+  ports:
+  - nodePort: 32750
+    port: 8080
+    targetPort: 8080
