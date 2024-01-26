@@ -5,10 +5,10 @@ kind: Service
 metadata:
   name: ps-retail-cartservice-service
   labels:
-    app: ps-retail-cartservice-app
+    app: tga-cart-service-pipeline
 spec:
   selector:
-    app: ps-retail-cartservice-app
+    app: tga-cart-service-pipeline
   type: LoadBalancer
   ports:
   - nodePort: 32750

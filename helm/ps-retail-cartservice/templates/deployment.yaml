@@ -13,11 +13,11 @@ spec:
   revisionHistoryLimit: 10
   selector:
     matchLabels:
-      app: ps-retail-cartservice-app
+      app: tga-cart-service-pipeline
   template:
     metadata:
       labels:
-        app: ps-retail-cartservice-app
+        app: tga-cart-service-pipeline
     spec:
       containers:
       - name: ps-retail-cartservice-container

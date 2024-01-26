@@ -7,7 +7,7 @@ pipeline {
                         sh 'cp -R helm/* .'
 		        sh 'ls -ltr'
                         sh 'pwd'
-                        sh '/usr/local/bin/helm upgrade --install ps-retail-cartservice-app ps-retail-cartservice  --set image.repository=tgacontainerregistry.azurecr.io/tga/ps-retail-cartservice --set image.tag=1'
+                        sh '/usr/local/bin/helm upgrade --install tga-cart-service-pipeline ps-retail-cartservice  --set image.repository=tgacontainerregistry.azurecr.io/tga/ps-retail-cartservice --set image.tag=1'
               			
             }           
         }
